@@ -14,4 +14,5 @@ COPY . .
 
 EXPOSE 3000
 
+#give any command here
 CMD ["node", "server.js"]
