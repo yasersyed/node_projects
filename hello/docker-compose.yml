@@ -1,0 +1,29 @@
+version: "1"
+services:
+  node-app:
+    build: .
+    image: hello
+    environment:
+      - MONGO_DB_URL=mongodb://mongodb:27017/node-boilerplate
+    ports:
+      - '8085:8085'
+    depends_on:
+      - db
+    volumes:
+      - .:/src
+    networks:
+      - node-network
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    container_name: mongodb
+    volumes:
+      - ~/mongo/data:/data/db
+volumes:
+  mongodb:
+    external: true
+
+networks:
+  node-network:
+    driver: bridge

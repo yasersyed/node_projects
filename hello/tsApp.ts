@@ -1,16 +1,16 @@
-// type User = {
-//     name: string;
-//     age: number;
-// }
+type User = {
+    name: string;
+    age: number;
+}
 
-// function isAdult(user: User): boolean
-// {
-//     return user.age >= 18;
-// }
+function isAdult(user: User): boolean
+{
+    return user.age >= 18;
+}
 
-// const yaser: User = {
-//     name: 'yaser',
-//     age: 30,
-// };
+const yaser: User = {
+    name: 'yaser',
+    age: 30,
+};
 
-// console.log(isAdult(yaser));
+console.log(isAdult(yaser));

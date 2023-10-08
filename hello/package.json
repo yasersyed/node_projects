@@ -3,16 +3,22 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "test": "node ./bin/www"
+        "test": "jest"
     },
     "dependencies": {
         "axios": "^1.5.0",
         "body-parser": "^1.20.2",
+        "child_process": "^1.0.2",
         "emitter": "^0.0.5",
         "events": "^3.3.0",
         "express": "~4.16.1",
         "fs": "^0.0.1-security",
         "http": "^0.0.1-security",
-        "https": "^1.0.0"
+        "https": "^1.0.0",
+        "jest": "^29.7.0",
+        "mongodb": "^6.1.0",
+        "tsc": "^2.0.4",
+        "util": "^0.12.5",
+        "type": "module"
     }
 }

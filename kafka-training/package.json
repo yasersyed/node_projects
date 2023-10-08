@@ -1,0 +1,11 @@
+{
+    "name": "kafka-training",
+    "version": "0.0.0",
+    "private": "true",
+    "scripts": {
+        "test": "node ./bin/www"
+    },
+    "dependencies": {
+        "node-rdkafka": "^2.17.0"
+    }
+}

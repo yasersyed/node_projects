@@ -1,0 +1,10 @@
+const ElectricCar  = require("./electricCar");
+let electCar = new ElectricCar("Toyota", "Prius", "300 kWh");
+electCar.start();
+electCar.charge();
+elec = 1;
+console.log(elec);
+var elec = 2;
+console.log(elec);
+// console.log(global);
+// eval(`/c/Users/syedy/Node Projects/hello/src/threads/child_processes/child_process.js`);
